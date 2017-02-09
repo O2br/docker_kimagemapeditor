@@ -3,8 +3,8 @@ MAINTAINER Andre da Silva Mesquita<andre@o2br.net>
 # Based off work by Patrick Valsecchi<patrick.valsecchi@camptocamp.com>
 
 #COPY build /build/scripts
-RUN apt-get -y update && apt-get install -y kimagemapeditor && \
-    apt-get clean
+RUN apt-get -y update && apt-get install -y kimagemapeditor 
+RUN apt-get autoclean -y
 
 ENV DISPLAY 192.168.99.1:0.0
 
